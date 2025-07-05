@@ -5,7 +5,7 @@ pragma solidity >=0.7.0 <0.9.0;
 contract random_demo {
     function getRandom() public view returns (uint256) {
         bytes32 hashA = keccak256(
-            abi.encode(block.timestamp, msg.sender, block.number, "yideng")
+            abi.encode(block.timestamp, msg.sender, block.number, "test")
         );
         return uint256(hashA);
     }

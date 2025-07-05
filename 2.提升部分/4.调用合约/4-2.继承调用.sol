@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.7.0 <0.9.0;
 
-import "./Yideng.sol";
+import "./Test.sol";
 
-contract test is Loayuan {
+contract test is Test {
     function callParentSuper() public {
         super.hello();
     }

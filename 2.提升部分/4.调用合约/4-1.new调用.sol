@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.7.0 <0.9.0;
 
-import {Loayuan} from "./Yideng.sol";
+import { Test } from "./Test.sol";
 
 contract Import {
-    Laoyuan yd = new Loayuan();
+    Test test = new Test();
 
     function test() public {
-        yd.hello();
+        test.hello();
     }
 }

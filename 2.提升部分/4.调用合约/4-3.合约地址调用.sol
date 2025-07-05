@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.7.0 <0.9.0;
 
-interface IYideng {
+interface ITest {
     function setX(uint256 x) external;
 
     function getX() external view returns (uint256);
@@ -9,7 +9,7 @@ interface IYideng {
 
 contract CallContract {
     function callSetX(address _Address, uint256 x) external {
-        IYideng yideng = IYideng(_Address);
-        yideng.setX(x);
+        ITest test = ITest(_Address);
+        test.setX(x);
     }
 }

@@ -19,7 +19,7 @@ contract struct_demo {
     User user;
 
     constructor() {
-        user.name = "laoyuan";
+        user.name = "test";
     }
 
     function setUser(

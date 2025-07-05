@@ -5,13 +5,13 @@ pragma solidity >=0.7.0 <0.9.0;
 contract deposit_demo {
     address owner;
 
-    function getBalance() public view returns (uint256) {
-        return address(this).balance;
-    }
-
     constructor() {
         //部署合约的人
         owner = msg.sender;
+    }
+
+    function getBalance() public view returns (uint256) {
+        return address(this).balance;
     }
 
     function deposit() public payable {

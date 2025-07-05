@@ -10,9 +10,9 @@ contract array_demo {
     uint256[] public ages;
 
     constructor() {
-        names[0] = "yideng";
+        names[0] = "test";
         //定长数组不允许push
-        // names.push("yideng2");
+        // names.push("test1");
 
         //动态数组不允许不存在的下标
         // ages[0] = 110;

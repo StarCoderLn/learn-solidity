@@ -7,7 +7,7 @@ contract map_demo {
 
     constructor() {
         //部署合约的人 owner
-        addr_names[msg.sender] = "laoyuan";
+        addr_names[msg.sender] = "test";
     }
 
     function setNames(string memory _name) public {

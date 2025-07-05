@@ -3,7 +3,7 @@ pragma solidity >=0.7.0 <0.9.0;
 
 contract RedPacket {
     //定义一个发红包的主体
-    address payable public yideng;
+    address payable public tuoniaodan;
     //红包的金额
     uint256 public totalAmount;
     //红包的数量
@@ -18,7 +18,7 @@ contract RedPacket {
     constructor(uint256 c, bool _isEqual) payable {
         require(msg.value > 0, "amount must be greater than 0");
         //部署合约的人就是发红包的人
-        yideng = payable(msg.sender);
+        tuoniaodan = payable(msg.sender);
         count = c;
         isEqual = _isEqual;
         totalAmount = msg.value;
@@ -50,7 +50,7 @@ contract RedPacket {
                     keccak256(
                         abi.encodePacked(
                             msg.sender,
-                            yideng,
+                            tuoniaodan,
                             count,
                             totalAmount,
                             block.timestamp
