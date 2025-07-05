@@ -15,7 +15,7 @@ contract Hello {
         greeting = _greeting;
     }
 
-    function say() public view returns (string memory) {
+    function getGreeting() public view returns (string memory) {
         return greeting;
     }
 }
